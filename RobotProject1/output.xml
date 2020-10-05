@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.8.6 on win32)" generated="20201005 00:36:40.396" rpa="false">
+<suite id="s1" name="TestSuit1" source="C:\mehdi\work\workSpace\RobotProject1\test\TestSuit1.robot">
+<kw name="Log" library="BuiltIn" type="setup">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am inside testSuite setup</arg>
+</arguments>
+<msg timestamp="20201005 00:36:40.616" level="INFO">I am inside testSuite setup</msg>
+<status status="PASS" starttime="20201005 00:36:40.616" endtime="20201005 00:36:40.616"></status>
+</kw>
+<test id="s1-t1" name="FirstSeleniumTest">
+<kw name="Log" library="BuiltIn" type="setup">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am inside test setup</arg>
+</arguments>
+<msg timestamp="20201005 00:36:40.617" level="INFO">I am inside test setup</msg>
+<status status="PASS" starttime="20201005 00:36:40.617" endtime="20201005 00:36:40.618"></status>
+</kw>
+<kw name="Set Tags" library="BuiltIn">
+<doc>Adds given ``tags`` for the current test or all tests in a suite.</doc>
+<arguments>
+<arg>test2</arg>
+</arguments>
+<msg timestamp="20201005 00:36:40.619" level="INFO">Set tag 'test2'.</msg>
+<status status="PASS" starttime="20201005 00:36:40.619" endtime="20201005 00:36:40.619"></status>
+</kw>
+<kw name="Remove Tags" library="BuiltIn">
+<doc>Removes given ``tags`` from the current test or all tests in a suite.</doc>
+<arguments>
+<arg>seleniumTest</arg>
+</arguments>
+<msg timestamp="20201005 00:36:40.620" level="INFO">Removed tag 'seleniumTest'.</msg>
+<status status="PASS" starttime="20201005 00:36:40.620" endtime="20201005 00:36:40.620"></status>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://google.com</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20201005 00:36:40.621" level="INFO">Opening browser 'chrome' to base url 'https://google.com'.</msg>
+<status status="PASS" starttime="20201005 00:36:40.621" endtime="20201005 00:36:45.450"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20201005 00:36:45.451" endtime="20201005 00:36:45.453"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=q</arg>
+<arg>testRecherche</arg>
+</arguments>
+<msg timestamp="20201005 00:36:45.454" level="INFO">Typing text 'testRecherche' into text field 'name=q'.</msg>
+<status status="PASS" starttime="20201005 00:36:45.454" endtime="20201005 00:36:45.575"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>name=q</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20201005 00:36:45.577" level="INFO">Sending key(s) ('ENTER',) to name=q element.</msg>
+<msg timestamp="20201005 00:36:45.858" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20201005 00:36:45.858" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20201005 00:36:45.577" endtime="20201005 00:36:47.571"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20201005 00:36:49.574" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20201005 00:36:47.572" endtime="20201005 00:36:49.574"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20201005 00:36:49.575" endtime="20201005 00:36:51.703"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Test completed!</arg>
+</arguments>
+<msg timestamp="20201005 00:36:51.706" level="INFO">Test completed!</msg>
+<status status="PASS" starttime="20201005 00:36:51.705" endtime="20201005 00:36:51.706"></status>
+</kw>
+<kw name="Log" library="BuiltIn" type="teardown">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am inside test teardown</arg>
+</arguments>
+<msg timestamp="20201005 00:36:51.710" level="INFO">I am inside test teardown</msg>
+<status status="PASS" starttime="20201005 00:36:51.708" endtime="20201005 00:36:51.711"></status>
+</kw>
+<tags>
+<tag>sanity</tag>
+<tag>test2</tag>
+</tags>
+<status status="PASS" starttime="20201005 00:36:40.616" endtime="20201005 00:36:51.712" critical="yes"></status>
+</test>
+<kw name="Log" library="BuiltIn" type="teardown">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am inside testSuite teardown</arg>
+</arguments>
+<msg timestamp="20201005 00:36:51.718" level="INFO">I am inside testSuite teardown</msg>
+<status status="PASS" starttime="20201005 00:36:51.717" endtime="20201005 00:36:51.718"></status>
+</kw>
+<status status="PASS" starttime="20201005 00:36:40.397" endtime="20201005 00:36:51.718"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">sanity</stat>
+<stat pass="1" fail="0">test2</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="TestSuit1">TestSuit1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
