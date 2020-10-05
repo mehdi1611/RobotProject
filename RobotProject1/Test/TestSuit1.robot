@@ -4,7 +4,7 @@ Library    SeleniumLibrary
 Suite Setup        Log    I am inside testSuite setup
 Suite Teardown     log    I am inside testSuite teardown
 Test Setup         log    I am inside test setup
-Test Teardown      Log    I am inside test teardown    
+Test Teardown      Log    I am inside test teardown now   
 
 Default Tags    sanity
 
