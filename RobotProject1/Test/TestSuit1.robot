@@ -9,6 +9,7 @@ Test Teardown      Log    I am inside test teardown now
 Default Tags    sanity
 
 *** Test Cases ***
+# Test Jenkins 07-10
 # Run test from cmd : C:\mehdi\work\workSpace\RobotProject1>robot -t MyFirstTest --settag=regression1 Test\TestSuit1.robot
 # Run test by his tag : robot --include test1 test\TestSuit1.robot
                       # robot -i sanity -i test1 test\TestSuit1.robot
