@@ -21,7 +21,7 @@ MyFirstTest
 FirstSeleniumTest 
     Set Tags    test2
     Remove Tags    seleniumTest
-    Open Browser                 https://google.com        chrome
+    Open Browser                 https://google.fr        chrome
     Set Browser Implicit Wait    5
     Input Text                   name=q                    testRecherche
     Press Keys                   name=q    ENTER
